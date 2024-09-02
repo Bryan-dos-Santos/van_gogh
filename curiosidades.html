@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent van Gogh</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        header {
+            background-color: #567083;
+            
+        }
+
+        ul {
+            list-style-type: none;
+
+            color: #567083;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #567083 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #567083;
+            color: white;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #567083;
+            color: white;
+            text-align: center;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+
+            .principal {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Vincent van Gogh</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="/gogh/img/vincent-van-gogh-l.webp">
+            <div class="infos">
+                <p><strong>Ocupação:</strong> Pintor Holandês</p>
+                <p>
+                    <strong>Data do Nascimento:</strong>
+                    30/03/1853
+                </p>
+                <p><strong>Data da Morte:</strong> 29/07/1890 (aos 37 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Vincent van Gogh - Curiosidades
+            </h1>
+            <p>1- O célebre pintor impressionista só começou a se dedicar à arte aos 27 anos de idade.</p>
+            <p>2- Em menos de 10 anos, ele produziu cerca de 900 pinturas.</p>
+            <p>3- No entanto, ele só vendeu uma pintura em vida. Seu sucesso foi completamente póstumo e se deve à sua cunhada, Joanna, que fez de sua missão espalhar a obra e a história de vida de Van Gogh. Ela levou suas obras a diversas exposições e publicou suas cartas na esperança de tornar sua história conhecida. A fama só chegaria mesmo 11 anos depois da morte do pintor.</p>
+            <p>4- Inicialmente, o artista retratava modelos. Com a piora de sua situação econômica, ele não pôde mais pagar por esse serviço, voltando-se aos retratos da natureza pelo qual ficou conhecido.</p>
+            <p>5- A saúde mental de Van Gogh era notoriamente frágil, e diversos psiquiatras tentaram diagnosticá-lo com base em suas cartas e diários. Acredita-se que ele tenha sofrido de diversas doenças mentais, como bipolaridade e esquizofrenia.</p>
+            <p>6- As cores de seus quadros assim como os de muitos outros artistas da época não são exatamente como deveriam ser. Isso se deve ao uso de um pigmento considerado “instável”, cujo tom se alterava com a passagem do tempo.</p>
+            <p>7- Ele era o rei da “selfie” antiga. Em 3 anos, ele produziu 37 autorretratos.</p>
+            <p>8- Muito se fala sobre a orelha cortada do pintor, mas essa história é mal contada: apenas um pedaço foi arrancado, e não se sabe se o culpado foi de fato Vincent. Alguns historiadores atribuem a culpa a Gaugin, pintor com quem Vincent mantinha um relacionamento conturbado. Ele teria sido o responsável pela mutilação, mas Van Gogh teria mentido para evitar que o amigo fosse mandado para a prisão.</p>
+            <p>9- Algumas das melhores obras do artista foram feitas durante o período em que ele estava em um hospício. No inverno de 1888, ele se internou devido a um surto mental, e pintou “Noite Estrelada” durante sua estadia.</p>
+            <p>10- Não se sabe ao certo se sua morte foi fruto de suicídio ou homicídio. O artista foi baleado no estômago, e enquanto alguns acreditam que ele tenha sido o responsável, outros creem que sua morte tenha sido consequência de uma “pegadinha” feita por dois garotos.
+                Apesar de estar muito deprimido na época, historiadores apontam que não havia armas perto de seu corpo quando ele foi encontrado, o que aponta para assassinato. Segundo seu irmão, Theo, as últimas palavras do pintor foram “la tristesse durera toujours” (A tristeza será eterna).</p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
